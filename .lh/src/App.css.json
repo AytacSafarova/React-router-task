@@ -1,0 +1,54 @@
+{
+    "sourceFile": "src/App.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1663523772188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1663523779287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n  \n }\n .link{\n   text-decoration-line: none;\n-  color:black;\n+  color:whit;\n   font-size: 28px;\n   font-weight: bold;\n \n }\n"
+                },
+                {
+                    "date": 1663523819757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n  \n }\n .link{\n   text-decoration-line: none;\n-  color:whit;\n-  font-size: 28px;\n+  color:white;\n+  font-size: px;\n   font-weight: bold;\n \n }\n"
+                },
+                {
+                    "date": 1663523828972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,8 @@\n }\n .link{\n   text-decoration-line: none;\n   color:white;\n-  font-size: px;\n+  font-size: 3px;\n   font-weight: bold;\n \n }\n"
+                },
+                {
+                    "date": 1663523850544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,8 @@\n }\n .link{\n   text-decoration-line: none;\n   color:white;\n-  font-size: 3px;\n+  font-size: 30px;\n   font-weight: bold;\n \n }\n"
+                },
+                {
+                    "date": 1663523876467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,8 @@\n }\n .link{\n   text-decoration-line: none;\n   color:white;\n-  font-size: 30px;\n+  font-size: 3px;\n   font-weight: bold;\n \n }\n"
+                },
+                {
+                    "date": 1663523882111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,8 @@\n }\n .link{\n   text-decoration-line: none;\n   color:white;\n-  font-size: 3px;\n+  font-size: 28px;\n   font-weight: bold;\n \n }\n"
+                },
+                {
+                    "date": 1663523958188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n  \n }\n .link{\n   text-decoration-line: none;\n-  color:white;\n+  color:black;\n   font-size: 28px;\n   font-weight: bold;\n \n }\n"
+                },
+                {
+                    "date": 1663523968211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n }\n .link{\n   text-decoration-line: none;\n   color:black;\n+  \n   font-size: 28px;\n   font-weight: bold;\n \n }\n"
+                },
+                {
+                    "date": 1663523974374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n }\n .link{\n   text-decoration-line: none;\n   color:black;\n-  border: ;\n+  border: 1;\n   font-size: 28px;\n   font-weight: bold;\n \n }\n"
+                }
+            ],
+            "date": 1663523772188,
+            "name": "Commit-0",
+            "content": "*{\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\nbody{\n  background-color: #D2C4AA\n\n  ;\n}\nul{\n  display:  flex;\n  justify-content: space-around;\n}\nnav{\n  margin-bottom: 20px;\n  padding: 20px;\n  background-color: #814827\n\n  ;\n}\nli{\n  list-style-type: none;\n \n}\n.link{\n  text-decoration-line: none;\n  color:black;\n  font-size: 28px;\n  font-weight: bold;\n\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "sourceFile": "src/SupplierList/SupplierList.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1663523047642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1663523103854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,6 +21,9 @@\n     color: white;\r\n   }\r\n   h1{\r\n     text-align: center;\r\n-    marg\r\n+    margin-bottom: 10px;\r\n+  }\r\n+  .link{\r\n+    \r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1663523121518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,6 +24,9 @@\n     text-align: center;\r\n     margin-bottom: 10px;\r\n   }\r\n   .link{\r\n-    \r\n+    text-decoration-line: none;\r\n+  color:black;\r\n+  font-size: 28px;\r\n+  font-weight: bold;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1663523129907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,7 +26,7 @@\n   }\r\n   .link{\r\n     text-decoration-line: none;\r\n   color:black;\r\n-  font-size: 28px;\r\n+  /* font-size: 28px; */\r\n   font-weight: bold;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1663523146165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,6 +27,6 @@\n   .link{\r\n     text-decoration-line: none;\r\n   color:black;\r\n   /* font-size: 28px; */\r\n-  font-weight: bold;\r\n+  /* font-weight: bold; */\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1663523157174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,8 @@\n     margin-bottom: 10px;\r\n   }\r\n   .link{\r\n     text-decoration-line: none;\r\n-  color:black;\r\n+  /* color:black; */\r\n   /* font-size: 28px; */\r\n   /* font-weight: bold; */\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1663523185914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,5 +28,6 @@\n     text-decoration-line: none;\r\n   /* color:black; */\r\n   /* font-size: 28px; */\r\n   /* font-weight: bold; */\r\n+  \r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1663523192667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,6 +28,6 @@\n     text-decoration-line: none;\r\n   /* color:black; */\r\n   /* font-size: 28px; */\r\n   /* font-weight: bold; */\r\n-  \r\n+  font-size: 16px;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1663525097013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,39 @@\n+#suppliers_list {\r\n+    font-family: Arial, Helvetica, sans-serif;\r\n+    border-collapse: collapse;\r\n+    width: 100%;\r\n+  }\r\n+  \r\n+  #suppliers_list td, #customers th {\r\n+    border: 1px solid #ddd;\r\n+    padding: 8px;\r\n+  }\r\n+  \r\n+  #suppliers_list tr:nth-child(even){background-color: #f2f2f2;}\r\n+  \r\n+  #suppliers_list tr:hover {background-color: #ddd;}\r\n+  \r\n+  #suppliers_list th {\r\n+    padding-top: 12px;\r\n+    padding-bottom: 12px;\r\n+    text-align: left;\r\n+    background-color: black;\r\n+    color: white;\r\n+  }\r\n+  h1{\r\n+    text-align: center;\r\n+    margin-bottom: 10px;\r\n+  }\r\n+  .link{\r\n+    text-decoration-line: none;\r\n+  /* color:black; */\r\n+  /* font-size: 28px; */\r\n+  /* font-weight: bold; */\r\n+  font-size: 16px;\r\n+  }\r\n+  .go_back_button{\r\n+    background-color: black;\r\n+    position: absolute;\r\n+    top: 100px;\r\n+    left: 0;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1663526682629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,48 +25,12 @@\n     margin-bottom: 10px;\r\n   }\r\n   .link{\r\n     text-decoration-line: none;\r\n-  /* color:black; */\r\n-  /* font-size: 28px; */\r\n-  /* font-weight: bold; */\r\n-  font-size: 16px;\r\n+  \r\n   }\r\n   .go_back_button{\r\n     background-color: black;\r\n     position: absolute;\r\n     top: 100px;\r\n     left: 0;\r\n-}\n-#suppliers_list {\r\n-    font-family: Arial, Helvetica, sans-serif;\r\n-    border-collapse: collapse;\r\n-    width: 100%;\r\n-  }\r\n-  \r\n-  #suppliers_list td, #customers th {\r\n-    border: 1px solid #ddd;\r\n-    padding: 8px;\r\n-  }\r\n-  \r\n-  #suppliers_list tr:nth-child(even){background-color: #f2f2f2;}\r\n-  \r\n-  #suppliers_list tr:hover {background-color: #ddd;}\r\n-  \r\n-  #suppliers_list th {\r\n-    padding-top: 12px;\r\n-    padding-bottom: 12px;\r\n-    text-align: left;\r\n-    background-color: black;\r\n-    color: white;\r\n-  }\r\n-  h1{\r\n-    text-align: center;\r\n-    margin-bottom: 10px;\r\n-  }\r\n-  .link{\r\n-    text-decoration-line: none;\r\n-  /* color:black; */\r\n-  /* font-size: 28px; */\r\n-  /* font-weight: bold; */\r\n-  font-size: 16px;\r\n\\ No newline at end of file\n-  }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1663526693943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,36 +1,40 @@\n #suppliers_list {\r\n-    font-family: Arial, Helvetica, sans-serif;\r\n-    border-collapse: collapse;\r\n-    width: 100%;\r\n-  }\r\n-  \r\n-  #suppliers_list td, #customers th {\r\n-    border: 1px solid #ddd;\r\n-    padding: 8px;\r\n-  }\r\n-  \r\n-  #suppliers_list tr:nth-child(even){background-color: #f2f2f2;}\r\n-  \r\n-  #suppliers_list tr:hover {background-color: #ddd;}\r\n-  \r\n-  #suppliers_list th {\r\n-    padding-top: 12px;\r\n-    padding-bottom: 12px;\r\n-    text-align: left;\r\n-    background-color: black;\r\n-    color: white;\r\n-  }\r\n-  h1{\r\n-    text-align: center;\r\n-    margin-bottom: 10px;\r\n-  }\r\n-  .link{\r\n-    text-decoration-line: none;\r\n-  \r\n-  }\r\n-  .go_back_button{\r\n-    background-color: black;\r\n-    position: absolute;\r\n-    top: 100px;\r\n-    left: 0;\r\n-}\n\\ No newline at end of file\n+  font-family: Arial, Helvetica, sans-serif;\r\n+  border-collapse: collapse;\r\n+  width: 100%;\r\n+}\r\n+\r\n+#suppliers_list td,\r\n+#customers th {\r\n+  border: 1px solid #ddd;\r\n+  padding: 8px;\r\n+}\r\n+\r\n+#suppliers_list tr:nth-child(even) {\r\n+  background-color: #f2f2f2;\r\n+}\r\n+\r\n+#suppliers_list tr:hover {\r\n+  background-color: #ddd;\r\n+}\r\n+\r\n+#suppliers_list th {\r\n+  padding-top: 12px;\r\n+  padding-bottom: 12px;\r\n+  text-align: left;\r\n+  background-color: black;\r\n+  color: white;\r\n+}\r\n+h1 {\r\n+  text-align: center;\r\n+  margin-bottom: 10px;\r\n+}\r\n+.link {\r\n+  text-decoration-line: none;\r\n+}\r\n+.go_back_button {\r\n+  background-color: black;\r\n+  position: absolute;\r\n+  top: 100px;\r\n+  left: 0;\r\n+}\r\n"
+                }
+            ],
+            "date": 1663523047642,
+            "name": "Commit-0",
+            "content": "#suppliers_list {\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    border-collapse: collapse;\r\n    width: 100%;\r\n  }\r\n  \r\n  #suppliers_list td, #customers th {\r\n    border: 1px solid #ddd;\r\n    padding: 8px;\r\n  }\r\n  \r\n  #suppliers_list tr:nth-child(even){background-color: #f2f2f2;}\r\n  \r\n  #suppliers_list tr:hover {background-color: #ddd;}\r\n  \r\n  #suppliers_list th {\r\n    padding-top: 12px;\r\n    padding-bottom: 12px;\r\n    text-align: left;\r\n    background-color: black;\r\n    color: white;\r\n  }\r\n  h1{\r\n    text-align: center;\r\n    marg\r\n  }"
+        }
+    ]
+}

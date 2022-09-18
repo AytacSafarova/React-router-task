@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/SupplierDetail/SupplierDetails.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1663523025463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1663524857525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,6 +21,13 @@\n     color: white;\r\n   }\r\n   h1{\r\n     text-align: center;\r\n-    marg\r\n-  }\n\\ No newline at end of file\n+    margin-bottom: 10px;\r\n+  }\r\n+\r\n+  .go_back_button{\r\n+    background-color: black;\r\n+    position: absolute;\r\n+    top: 100px;\r\n+    left: 0;\r\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1663523025463,
+            "name": "Commit-0",
+            "content": "#suppliers_list {\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    border-collapse: collapse;\r\n    width: 100%;\r\n  }\r\n  \r\n  #suppliers_list td, #customers th {\r\n    border: 1px solid #ddd;\r\n    padding: 8px;\r\n  }\r\n  \r\n  #suppliers_list tr:nth-child(even){background-color: #f2f2f2;}\r\n  \r\n  #suppliers_list tr:hover {background-color: #ddd;}\r\n  \r\n  #suppliers_list th {\r\n    padding-top: 12px;\r\n    padding-bottom: 12px;\r\n    text-align: left;\r\n    background-color: black;\r\n    color: white;\r\n  }\r\n  h1{\r\n    text-align: center;\r\n    marg\r\n  }"
+        }
+    ]
+}

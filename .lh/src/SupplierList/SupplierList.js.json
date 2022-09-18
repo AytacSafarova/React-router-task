@@ -1,0 +1,78 @@
+{
+    "sourceFile": "src/SupplierList/SupplierList.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1663523074131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1663523079811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                   <td>{item.companyName}</td>\r\n                   <td>{item.contactName}</td>\r\n                   <td>{item.contactTitle}</td>\r\n                   <td onClick={() => deleteSupplier(item.id)}>Delete</td>\r\n-                  <Link  to={`/detail/${item.id}`}>Details</Link>\r\n+                  <Link classnam to={`/detail/${item.id}`}>Details</Link>\r\n                 </tr>\r\n               );\r\n             })}\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1663523216737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                   <td>{item.companyName}</td>\r\n                   <td>{item.contactName}</td>\r\n                   <td>{item.contactTitle}</td>\r\n                   <td onClick={() => deleteSupplier(item.id)}>Delete</td>\r\n-                  <Link classnam to={`/detail/${item.id}`}>Details</Link>\r\n+                  <Link  to={`/detail/${item.id}`}>Details</Link>\r\n                 </tr>\r\n               );\r\n             })}\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1663523240645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                   <td>{item.companyName}</td>\r\n                   <td>{item.contactName}</td>\r\n                   <td>{item.contactTitle}</td>\r\n                   <td onClick={() => deleteSupplier(item.id)}>Delete</td>\r\n-                  <Link  to={`/detail/${item.id}`}>Details</Link>\r\n+                  <Link style={ma} to={`/detail/${item.id}`}>Details</Link>\r\n                 </tr>\r\n               );\r\n             })}\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1663523248737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                   <td>{item.companyName}</td>\r\n                   <td>{item.contactName}</td>\r\n                   <td>{item.contactTitle}</td>\r\n                   <td onClick={() => deleteSupplier(item.id)}>Delete</td>\r\n-                  <Link style={ma} to={`/detail/${item.id}`}>Details</Link>\r\n+                  <Link style={} to={`/detail/${item.id}`}>Details</Link>\r\n                 </tr>\r\n               );\r\n             })}\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1663523304515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                   <td>{item.companyName}</td>\r\n                   <td>{item.contactName}</td>\r\n                   <td>{item.contactTitle}</td>\r\n                   <td onClick={() => deleteSupplier(item.id)}>Delete</td>\r\n-                  <Link style={} to={`/detail/${item.id}`}>Details</Link>\r\n+                  <Link style={{}} to={`/detail/${item.id}`}>Details</Link>\r\n                 </tr>\r\n               );\r\n             })}\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1663523322565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                   <td>{item.companyName}</td>\r\n                   <td>{item.contactName}</td>\r\n                   <td>{item.contactTitle}</td>\r\n                   <td onClick={() => deleteSupplier(item.id)}>Delete</td>\r\n-                  <Link style={{}} to={`/detail/${item.id}`}>Details</Link>\r\n+                  <Link style={{color:}} to={`/detail/${item.id}`}>Details</Link>\r\n                 </tr>\r\n               );\r\n             })}\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1663523401863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                   <td>{item.companyName}</td>\r\n                   <td>{item.contactName}</td>\r\n                   <td>{item.contactTitle}</td>\r\n                   <td onClick={() => deleteSupplier(item.id)}>Delete</td>\r\n-                  <Link style={{color:}} to={`/detail/${item.id}`}>Details</Link>\r\n+                  <Link style={{color:\"black,\"}} to={`/detail/${item.id}`}>Details</Link>\r\n                 </tr>\r\n               );\r\n             })}\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1663523408106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                   <td>{item.companyName}</td>\r\n                   <td>{item.contactName}</td>\r\n                   <td>{item.contactTitle}</td>\r\n                   <td onClick={() => deleteSupplier(item.id)}>Delete</td>\r\n-                  <Link style={{color:\"black,\"}} to={`/detail/${item.id}`}>Details</Link>\r\n+                  <Link style={{color:\"black\", margin}} to={`/detail/${item.id}`}>Details</Link>\r\n                 </tr>\r\n               );\r\n             })}\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1663523414576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                   <td>{item.companyName}</td>\r\n                   <td>{item.contactName}</td>\r\n                   <td>{item.contactTitle}</td>\r\n                   <td onClick={() => deleteSupplier(item.id)}>Delete</td>\r\n-                  <Link style={{color:\"black\", margin}} to={`/detail/${item.id}`}>Details</Link>\r\n+                  <Link style={{color:\"black\", marginTop:\"10px\"}} to={`/detail/${item.id}`}>Details</Link>\r\n                 </tr>\r\n               );\r\n             })}\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1663523455879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                   <td>{item.companyName}</td>\r\n                   <td>{item.contactName}</td>\r\n                   <td>{item.contactTitle}</td>\r\n                   <td onClick={() => deleteSupplier(item.id)}>Delete</td>\r\n-                  <Link style={{color:\"black\", marginTop:\"10px\"}} to={`/detail/${item.id}`}>Details</Link>\r\n+                  <Link style={{color:\"black\", paddingTop:\"10px\"}} to={`/detail/${item.id}`}>Details</Link>\r\n                 </tr>\r\n               );\r\n             })}\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1663523479568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                   <td>{item.companyName}</td>\r\n                   <td>{item.contactName}</td>\r\n                   <td>{item.contactTitle}</td>\r\n                   <td onClick={() => deleteSupplier(item.id)}>Delete</td>\r\n-                  <Link style={{color:\"black\", paddingTop:\"10px\"}} to={`/detail/${item.id}`}>Details</Link>\r\n+                  <Link style={{color:\"black\", Top:\"10px\"}} to={`/detail/${item.id}`}>Details</Link>\r\n                 </tr>\r\n               );\r\n             })}\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1663523486237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                   <td>{item.companyName}</td>\r\n                   <td>{item.contactName}</td>\r\n                   <td>{item.contactTitle}</td>\r\n                   <td onClick={() => deleteSupplier(item.id)}>Delete</td>\r\n-                  <Link style={{color:\"black\", Top:\"10px\"}} to={`/detail/${item.id}`}>Details</Link>\r\n+                  <Link style={{color:\"black\", marginTop:\"10px\"}} to={`/detail/${item.id}`}>Details</Link>\r\n                 </tr>\r\n               );\r\n             })}\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1663523568293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                   <td>{item.companyName}</td>\r\n                   <td>{item.contactName}</td>\r\n                   <td>{item.contactTitle}</td>\r\n                   <td onClick={() => deleteSupplier(item.id)}>Delete</td>\r\n-                  <Link style={{color:\"black\", marginTop:\"10px\"}} to={`/detail/${item.id}`}>Details</Link>\r\n+                  <Link style={{color:\"black\"}} to={`/detail/${item.id}`}>Details</Link>\r\n                 </tr>\r\n               );\r\n             })}\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1663523583092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                   <td>{item.companyName}</td>\r\n                   <td>{item.contactName}</td>\r\n                   <td>{item.contactTitle}</td>\r\n                   <td onClick={() => deleteSupplier(item.id)}>Delete</td>\r\n-                 <t <Link style={{color:\"black\"}} to={`/detail/${item.id}`}>Details</Link>\r\n+                 <td <Link style={{color:\"black\"}} to={`/detail/${item.id}`}>Details</Link>\r\n                 </tr>\r\n               );\r\n             })}\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1663524563244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import { useNavigate } from \"react-router\";\r\n import \"./SupplierList.css\"\r\n \r\n function SupplierList() {\r\n-const navigate\r\n+const navigate=\r\n   const [suppliers, setSuppliers] = useState([]);\r\n   const baseURL = \"https://northwind.vercel.app/api/suppliers\";\r\n \r\n   useEffect(() => {\r\n"
+                }
+            ],
+            "date": 1663523074131,
+            "name": "Commit-0",
+            "content": "import { useState, useEffect } from \"react\";\r\nimport axios from \"axios\";\r\nimport { Link } from \"react-router-dom\";\r\nimport \"./SupplierList.css\"\r\n\r\nfunction SupplierList() {\r\n\r\n  const [suppliers, setSuppliers] = useState([]);\r\n  const baseURL = \"https://northwind.vercel.app/api/suppliers\";\r\n\r\n  useEffect(() => {\r\n    axios.get(baseURL).then((response) => {\r\n      setSuppliers(response.data);\r\n    });\r\n  }, []);\r\n\r\n  function deleteSupplier(id) {\r\n    let filteredSupplier = suppliers.filter((item) => item.id !== id);\r\n    setSuppliers(filteredSupplier);\r\n    console.log(id);\r\n  }\r\n\r\n  return (\r\n    <div>\r\n      <h1>Suppliers list</h1>\r\n      <table id=\"suppliers_list\">\r\n        <thead>\r\n          <tr>\r\n            <th>Id</th>\r\n            <th>Company name</th>\r\n            <th>Contact name</th>\r\n            <th>Contact title</th>\r\n            <th></th>\r\n            <th></th>\r\n\r\n\r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          {suppliers &&\r\n            suppliers.map((item, index) => {\r\n              return (\r\n                <tr key={item.id}>\r\n                  <td>{item.id}</td>\r\n                  <td>{item.companyName}</td>\r\n                  <td>{item.contactName}</td>\r\n                  <td>{item.contactTitle}</td>\r\n                  <td onClick={() => deleteSupplier(item.id)}>Delete</td>\r\n                  <Link  to={`/detail/${item.id}`}>Details</Link>\r\n                </tr>\r\n              );\r\n            })}\r\n        </tbody>\r\n      </table>\r\n    </div>\r\n  );\r\n}\r\nexport default SupplierList;\r\n"
+        }
+    ]
+}

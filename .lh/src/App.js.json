@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1663526875489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1663526882614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,8 @@\n       <nav>\n         <ul>\n           <li>\n             <Link className=\"link\" to=\"/\">\n-              {\" \"}\n               Home\n             </Link>\n           </li>\n           <li>\n"
+                }
+            ],
+            "date": 1663526875489,
+            "name": "Commit-0",
+            "content": "import { Route, Routes } from \"react-router\";\nimport { Link } from \"react-router-dom\";\nimport HomePage from \"./HomePage/Home\";\nimport AddSupplier from \"./AddSupplier/AddSupplier\";\nimport SupplierDetail from \"./SupplierDetail/SupplierDetail\";\nimport SupplierList from \"./SupplierList/SupplierList\";\nimport \"../src/App.css\";\n\nfunction App() {\n  return (\n    <>\n      <nav>\n        <ul>\n          <li>\n            <Link className=\"link\" to=\"/\">\n              {\" \"}\n              Home\n            </Link>\n          </li>\n          <li>\n            <Link className=\"link\" to=\"/list\">\n              List\n            </Link>\n          </li>\n          <li>\n            <Link className=\"link\" to=\"/add\">\n              Add\n            </Link>\n          </li>\n          <li>\n            <Link className=\"link\" to=\"/detail\">\n              Detail\n            </Link>\n          </li>\n        </ul>\n      </nav>\n\n      <Routes>\n        <Route path=\"/\" element={<HomePage />} />\n        <Route path=\"/list\" element={<SupplierList />} />\n        <Route path=\"/add\" element={<AddSupplier />} />\n        <Route path=\"/detail/:id\" element={<SupplierDetail />} />\n      </Routes>\n    </>\n  );\n}\n\nexport default App;\n"
+        }
+    ]
+}

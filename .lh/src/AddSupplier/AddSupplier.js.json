@@ -1,0 +1,58 @@
+{
+    "sourceFile": "src/AddSupplier/AddSupplier.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1663524502660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1663524541032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n import { useState } from \"react\";\r\n-import { useNavigate } from \"react-router\";\r\n-import axios from \"axios\";\r\n+Cimport axios from \"axios\";\r\n import \"./style.css\";\r\n function AddSupplier() {\r\n   const navigate = useNavigate();\r\n \r\n"
+                },
+                {
+                    "date": 1663524629769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import { useState } from \"react\";\r\n-Cimport axios from \"axios\";\r\n+import { useNavigate } from \"react-router\";\r\n+import axios from \"axios\";\r\n import \"./style.css\";\r\n function AddSupplier() {\r\n   const navigate = useNavigate();\r\n \r\n@@ -66,9 +67,8 @@\n         </div>\r\n \r\n         <button className=\"addbtn\" onClick={() => AddNewSupplier()}>Add Supplier</button>\r\n \r\n-        <button onClick={() => navigate(-1)}>Go back</button>\r\n \r\n       </div>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1663524642531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,10 @@\n   }\r\n   return (\r\n     <>\r\n       <div className=\"add_list_container\">\r\n+      <button onClick={() => navigate(-1)}>Go back</button>\r\n+\r\n         <div>\r\n           <label>Id:</label>\r\n           <input\r\n             value={newSupplier.id}\r\n"
+                },
+                {
+                    "date": 1663524700502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,8 @@\n   return (\r\n     <>\r\n       <div className=\"add_list_container\">\r\n       <button onClick={() => navigate(-1)}>Go back</button>\r\n-\r\n         <div>\r\n           <label>Id:</label>\r\n           <input\r\n             value={newSupplier.id}\r\n"
+                },
+                {
+                    "date": 1663524708703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   }\r\n   return (\r\n     <>\r\n       <div className=\"add_list_container\">\r\n-      <button onClick={() => navigate(-1)}>Go back</button>\r\n+      <button className=\"go\" onClick={() => navigate(-1)}>Go back</button>\r\n         <div>\r\n           <label>Id:</label>\r\n           <input\r\n             value={newSupplier.id}\r\n"
+                },
+                {
+                    "date": 1663524716020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   }\r\n   return (\r\n     <>\r\n       <div className=\"add_list_container\">\r\n-      <button className=\"go\" onClick={() => navigate(-1)}>Go back</button>\r\n+      <button className=\"go_back_button\" onClick={() => navigate(-1)}>Go back</button>\r\n         <div>\r\n           <label>Id:</label>\r\n           <input\r\n             value={newSupplier.id}\r\n"
+                },
+                {
+                    "date": 1663526821034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,11 @@\n   }\r\n   return (\r\n     <>\r\n       <div className=\"add_list_container\">\r\n-      <button className=\"go_back_button\" onClick={() => navigate(-1)}>Go back</button>\r\n+        <button className=\"go_back_button\" onClick={() => navigate(-1)}>\r\n+          Go back\r\n+        </button>\r\n         <div>\r\n           <label>Id:</label>\r\n           <input\r\n             value={newSupplier.id}\r\n@@ -66,11 +68,11 @@\n             }\r\n           />\r\n         </div>\r\n \r\n-        <button className=\"addbtn\" onClick={() => AddNewSupplier()}>Add Supplier</button>\r\n-\r\n-\r\n+        <button className=\"addbtn\" onClick={() => AddNewSupplier()}>\r\n+          Add Supplier\r\n+        </button>\r\n       </div>\r\n     </>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1663526830872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n import axios from \"axios\";\r\n import \"./style.css\";\r\n function AddSupplier() {\r\n   const navigate = useNavigate();\r\n-\r\n   const [newSupplier, setNewSupplier] = useState({\r\n     id: \"\",\r\n     companyName: \"\",\r\n     contactName: \"\",\r\n"
+                },
+                {
+                    "date": 1663526837299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { useState } from \"react\";\r\n import { useNavigate } from \"react-router\";\r\n import axios from \"axios\";\r\n import \"./style.css\";\r\n+\r\n function AddSupplier() {\r\n   const navigate = useNavigate();\r\n   const [newSupplier, setNewSupplier] = useState({\r\n     id: \"\",\r\n"
+                },
+                {
+                    "date": 1663526845828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n   function AddNewSupplier() {\r\n     const baseURL = \"https://northwind.vercel.app/api/suppliers\";\r\n     axios.post(baseURL, newSupplier);\r\n   }\r\n+  \r\n   return (\r\n     <>\r\n       <div className=\"add_list_container\">\r\n         <button className=\"go_back_button\" onClick={() => navigate(-1)}>\r\n"
+                }
+            ],
+            "date": 1663524502660,
+            "name": "Commit-0",
+            "content": "import { useState } from \"react\";\r\nimport { useNavigate } from \"react-router\";\r\nimport axios from \"axios\";\r\nimport \"./style.css\";\r\nfunction AddSupplier() {\r\n  const navigate = useNavigate();\r\n\r\n  const [newSupplier, setNewSupplier] = useState({\r\n    id: \"\",\r\n    companyName: \"\",\r\n    contactName: \"\",\r\n    contactTitle: \"\",\r\n    address: {\r\n      street: \"\",\r\n      city: \"\",\r\n      region: \"\",\r\n      postalCode: \"\",\r\n      country: \"\",\r\n    },\r\n  });\r\n\r\n  function AddNewSupplier() {\r\n    const baseURL = \"https://northwind.vercel.app/api/suppliers\";\r\n    axios.post(baseURL, newSupplier);\r\n  }\r\n  return (\r\n    <>\r\n      <div className=\"add_list_container\">\r\n        <div>\r\n          <label>Id:</label>\r\n          <input\r\n            value={newSupplier.id}\r\n            onChange={(e) =>\r\n              setNewSupplier({ ...newSupplier, id: e.target.value })\r\n            }\r\n          />\r\n        </div>\r\n        <div>\r\n          <label>Company name:</label>\r\n          <input\r\n            type=\"text\"\r\n            value={newSupplier.companyName}\r\n            onChange={(e) =>\r\n              setNewSupplier({ ...newSupplier, companyName: e.target.value })\r\n            }\r\n          />\r\n        </div>\r\n        <div>\r\n          <label>Contact name:</label>\r\n          <input\r\n            type=\"text\"\r\n            value={newSupplier.contactName}\r\n            onChange={(e) =>\r\n              setNewSupplier({ ...newSupplier, contactName: e.target.value })\r\n            }\r\n          />\r\n        </div>\r\n        <div>\r\n          <label>Contact title:</label>\r\n          <input\r\n            type=\"text\"\r\n            value={newSupplier.contactTitle}\r\n            onChange={(e) =>\r\n              setNewSupplier({ ...newSupplier, contactTitle: e.target.value })\r\n            }\r\n          />\r\n        </div>\r\n\r\n        <button className=\"addbtn\" onClick={() => AddNewSupplier()}>Add Supplier</button>\r\n\r\n        <button onClick={() => navigate(-1)}>Go back</button>\r\n\r\n      </div>\r\n    </>\r\n  );\r\n}\r\n\r\nexport default AddSupplier;\r\n"
+        }
+    ]
+}

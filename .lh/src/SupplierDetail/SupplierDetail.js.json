@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/SupplierDetail/SupplierDetail.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1663524929339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1663524957031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n import { useState, useEffect } from \"react\";\r\n import { useParams } from \"react-router\";\r\n import axios from \"axios\";\r\n import \"./SupplierDetails.css\"\r\n+import { useNavigate } from \"react-router\";\r\n \r\n+\r\n function SupplierDetail() {\r\n   const [detail, setDetail] = useState([])\r\n   let { id } = useParams();\r\n   const baseURL = \"https://northwind.vercel.app/api/suppliers/\";\r\n@@ -17,9 +19,9 @@\n   }, []);\r\n \r\n   return (\r\n     <div>\r\n-            <button className=\"go_back_button\" onClick={() => navigate(-1)}>Go back</button>\r\n+           <button className=\"go_back_button\" onClick={() => navigate(-1)}>Go back</button>\r\n \r\n       <h1>Supplier Details</h1>\r\n       <table id=\"suppliers_list\">\r\n         <thead>\r\n"
+                },
+                {
+                    "date": 1663524966373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n import { useNavigate } from \"react-router\";\r\n \r\n \r\n function SupplierDetail() {\r\n+  const na\r\n   const [detail, setDetail] = useState([])\r\n   let { id } = useParams();\r\n   const baseURL = \"https://northwind.vercel.app/api/suppliers/\";\r\n   console.log(\"detail\");\r\n"
+                },
+                {
+                    "date": 1663524972589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n import { useNavigate } from \"react-router\";\r\n \r\n \r\n function SupplierDetail() {\r\n-  const na\r\n+  const navigate=useNavigate()\r\n   const [detail, setDetail] = useState([])\r\n   let { id } = useParams();\r\n   const baseURL = \"https://northwind.vercel.app/api/suppliers/\";\r\n   console.log(\"detail\");\r\n"
+                },
+                {
+                    "date": 1663526645306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,13 @@\n import { useState, useEffect } from \"react\";\r\n import { useParams } from \"react-router\";\r\n import axios from \"axios\";\r\n-import \"./SupplierDetails.css\"\r\n+import \"./SupplierDetails.css\";\r\n import { useNavigate } from \"react-router\";\r\n \r\n-\r\n function SupplierDetail() {\r\n-  const navigate=useNavigate()\r\n-  const [detail, setDetail] = useState([])\r\n+  const navigate = useNavigate();\r\n+  const [detail, setDetail] = useState([]);\r\n   let { id } = useParams();\r\n   const baseURL = \"https://northwind.vercel.app/api/suppliers/\";\r\n   console.log(\"detail\");\r\n   console.log(id);\r\n@@ -20,9 +19,11 @@\n   }, []);\r\n \r\n   return (\r\n     <div>\r\n-           <button className=\"go_back_button\" onClick={() => navigate(-1)}>Go back</button>\r\n+      <button className=\"go_back_button\" onClick={() => navigate(-1)}>\r\n+        Go back\r\n+      </button>\r\n \r\n       <h1>Supplier Details</h1>\r\n       <table id=\"suppliers_list\">\r\n         <thead>\r\n"
+                },
+                {
+                    "date": 1663526660599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,9 @@\n   const navigate = useNavigate();\r\n   const [detail, setDetail] = useState([]);\r\n   let { id } = useParams();\r\n   const baseURL = \"https://northwind.vercel.app/api/suppliers/\";\r\n-  console.log(\"detail\");\r\n-  console.log(id);\r\n+\r\n   useEffect(() => {\r\n     axios.get(baseURL + id).then((response) => {\r\n       setDetail(response.data);\r\n       console.log(response.data);\r\n"
+                },
+                {
+                    "date": 1663526672414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n import { useState, useEffect } from \"react\";\r\n import { useParams } from \"react-router\";\r\n import axios from \"axios\";\r\n-import \"./SupplierDetails.css\";\r\n import { useNavigate } from \"react-router\";\r\n \r\n function SupplierDetail() {\r\n   const navigate = useNavigate();\r\n@@ -12,9 +11,8 @@\n \r\n   useEffect(() => {\r\n     axios.get(baseURL + id).then((response) => {\r\n       setDetail(response.data);\r\n-      console.log(response.data);\r\n     });\r\n   }, []);\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1663526736803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { useState, useEffect } from \"react\";\r\n import { useParams } from \"react-router\";\r\n import axios from \"axios\";\r\n import { useNavigate } from \"react-router\";\r\n+import \"./SupplierDetails.css\";\r\n \r\n function SupplierDetail() {\r\n   const navigate = useNavigate();\r\n   const [detail, setDetail] = useState([]);\r\n"
+                }
+            ],
+            "date": 1663524929339,
+            "name": "Commit-0",
+            "content": "import { useState, useEffect } from \"react\";\r\nimport { useParams } from \"react-router\";\r\nimport axios from \"axios\";\r\nimport \"./SupplierDetails.css\"\r\n\r\nfunction SupplierDetail() {\r\n  const [detail, setDetail] = useState([])\r\n  let { id } = useParams();\r\n  const baseURL = \"https://northwind.vercel.app/api/suppliers/\";\r\n  console.log(\"detail\");\r\n  console.log(id);\r\n  useEffect(() => {\r\n    axios.get(baseURL + id).then((response) => {\r\n      setDetail(response.data);\r\n      console.log(response.data);\r\n    });\r\n  }, []);\r\n\r\n  return (\r\n    <div>\r\n            <button className=\"go_back_button\" onClick={() => navigate(-1)}>Go back</button>\r\n\r\n      <h1>Supplier Details</h1>\r\n      <table id=\"suppliers_list\">\r\n        <thead>\r\n          <tr>\r\n            <th>Id</th>\r\n            <th>Company name</th>\r\n            <th>Contact name</th>\r\n            <th>Contact title</th>\r\n            <th>City</th>\r\n            <th>Region</th>\r\n            <th>Postal Code</th>\r\n            <th>Country</th>\r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          <tr key={detail.id}>\r\n            <td>{detail.id}</td>\r\n            <td>{detail.companyName}</td>\r\n            <td>{detail.contactName}</td>\r\n            <td>{detail.contactTitle}</td>\r\n            <td>{detail.address?.city}</td>\r\n            <td>{detail.address?.region}</td>\r\n            <td>{detail.address?.postalCode}</td>\r\n            <td>{detail.address?.country}</td>\r\n          </tr>\r\n        </tbody>\r\n      </table>\r\n    </div>\r\n  );\r\n}\r\nexport default SupplierDetail;\r\n"
+        }
+    ]
+}
